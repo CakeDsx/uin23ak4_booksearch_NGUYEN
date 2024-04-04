@@ -18,7 +18,7 @@ const BookDetails = () => {
         setLoading(true)
         async function getBookDetails(){
             try{
-                const response = await fetch (`${URL}${id}.json`)
+                const response = await fetch(`${URL}${id}.json`)
                 const data = await response.json()
                 console.log(data)
 

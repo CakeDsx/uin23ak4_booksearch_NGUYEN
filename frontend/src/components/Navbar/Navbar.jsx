@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navabar.scss"
+import "./Navbar.scss"
 import logoImg from "../pages/images/logo.png"
 import {HiOutlineMenuAlt3} from 'react-icons/hi'
 
@@ -27,9 +27,6 @@ const Navabar = () => {
                     <ul className= "navbar-nav">
                         <li className='nav-item'>
                             <Link to = "book" className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>Home</Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link to = "about" className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>About</Link>
                         </li>
                     </ul>
                 </div>

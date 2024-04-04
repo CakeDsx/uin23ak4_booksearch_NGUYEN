@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./BookList.scss"
 
-const Book = ({cover_img, title, author, ratings_average, first_publish_year, amazon_id}) => {
+const Book = ({cover_img, title, author, ratings_average, first_publish_year,}) => {
     const amazonUrl = `https://www.amazon.com/s?k=${title}`
 
     return (
@@ -19,7 +19,7 @@ const Book = ({cover_img, title, author, ratings_average, first_publish_year, am
 
                 <div className='book-item-info-item author fs-15'>
                     <span className='text-capitalize fw-7'>Author</span>
-                    <span>{Array-isArray(author) ? author.join(", ") : author} </span>
+                    <span>{Array.isArray(author) ? author.join(", ") : author} </span>
                 </div>
 
                 <div className='book-item-info-item ratings_average fs-15'>
