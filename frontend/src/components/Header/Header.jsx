@@ -2,7 +2,7 @@ import React from "react";
 import Navabar from "../Navbar/Navbar"
 import SearchForm from "../bookCard/searchResults"
 import "./Header.scss"
-
+// Header and i just used Lorem for some text 
 const Header = () => {
     return (
         <div className='holder'>

@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./BookList.scss"
-
+//makes it so when you click on the amazon button you get taken to amazon where it has already looked up the books for you to buy
 const Book = ({cover_img, title, author, ratings_average, first_publish_year,}) => {
     const amazonUrl = `https://www.amazon.com/s?k=${title}`
-
+//takes information from the API and shows it under the covers 
     return (
         <div className='book-item flex flex-column flex-sb'>
             <div className='book-item-img'>

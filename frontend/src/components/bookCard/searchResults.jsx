@@ -9,6 +9,7 @@ const SearchForm = () => {
     const searchText = useRef('')
     const navigate = useNavigate()
 
+    //makes it so u need atleast 3 letters to search
     const handleSubmit = (e) => {
         e.preventDefault()
         const tempSearchTerm = searchText.current.value.trim()
@@ -19,7 +20,7 @@ const SearchForm = () => {
             navigate('/book')
         }
     }
-
+    //this is the searching code its a placholder where u write the input and you can click search and youll get what u look for
     return (
         <div className='search-form'>
             <div className='container'>

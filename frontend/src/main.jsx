@@ -9,6 +9,7 @@ import BookDetails from './components/BookDetails/BookDetails'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
+  //routing to the different files so that the information from the pages are show on the website
   <AppProvider>
     <BrowserRouter>
       <Routes>

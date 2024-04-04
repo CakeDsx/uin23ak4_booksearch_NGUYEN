@@ -4,6 +4,7 @@ import "./Navbar.scss"
 import logoImg from "../pages/images/logo.png"
 import {HiOutlineMenuAlt3} from 'react-icons/hi'
 
+// button that can be clicked to show a button that takes you "Home"
 const Navabar = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
     const handleNavbar = () => setToggleMenu(!toggleMenu)

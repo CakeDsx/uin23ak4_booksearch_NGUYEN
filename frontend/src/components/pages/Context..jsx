@@ -4,11 +4,13 @@ const URL = "https://openlibrary.org/search.json?title="
 const AppContext = React.createContext()
 
 const AppProvider = ({children}) => {
-    const [searchTerm, setSearchTerm] = useState("James Bond")
+    const [searchTerm, setSearchTerm] = useState("James Bond") //Makes it so that James Bond is what is being "searched" meaning that only james bond books are shown
     const [books, setBooks] = useState([])
     const [loading, setLoading] = useState(true)
     const {resultTitle, setResultTitle} = useState("")
 
+
+    //fetches the Word/name that is being searched
     const fetchBooks = useCallback(async() => {
         setLoading(true)
         try{
@@ -16,10 +18,11 @@ const AppProvider = ({children}) => {
             const data = await response.json()
             const {docs} = data
 
+            //makes it so there is max 100 books that are shown
             if(docs){
                 const newBooks = docs.slice(0,100).map((bookSingle) => {
                     const {key, author_name, cover_i, ratings_average, first_publish_year, title} = bookSingle
-
+                    //the order the details abt the books are shown below the covers
                     return {
                         id: key,
                         author: author_name,
@@ -31,7 +34,7 @@ const AppProvider = ({children}) => {
                 })
 
                 setBooks(newBooks)
-
+                //if one or more books then show "your search results" but if less then one then show "no search result found"
                 if(newBooks.length > 1){
                     setResultTitle("Your Search Result")
                 } else {
