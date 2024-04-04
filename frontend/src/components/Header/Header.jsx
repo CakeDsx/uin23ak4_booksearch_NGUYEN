@@ -1,6 +1,6 @@
 import React from "react";
 import Navabar from "../Navbar/Navbar"
-import SearchForm from "../SearchForm/SearchForm"
+import SearchForm from "../bookCard/searchResults"
 import "./Header.scss"
 
 const Header = () => {

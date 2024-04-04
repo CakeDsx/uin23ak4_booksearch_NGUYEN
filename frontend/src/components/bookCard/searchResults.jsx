@@ -2,7 +2,7 @@ import React, {useRef} from "react";
 import { FaSearch } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import {useGlobalContext} from "../pages/Context."
-import './SearchForm.scss'
+import './SearchResults.scss'
 
 const SearchForm = () => {
     const { setSearchTerm, setResultTitle} = useGlobalContext()
