@@ -3,7 +3,7 @@ import {useGlobalContext} from '../pages/Context.'
 import Book from "./Book";
 import Loading from "../Loader/Loader"
 import coverImg from "../pages/images/cover_not_found.jpg"
-import "./Book.scss"
+import "./BookList.scss"
 
 //https://covers.openlibrary.org/b/id/240727-S.jpg
 
