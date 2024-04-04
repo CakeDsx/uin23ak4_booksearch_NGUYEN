@@ -17,7 +17,7 @@ const AppProvider = ({children}) => {
             const {docs} = data
 
             if(docs){
-                const newBooks = docs.slice(0,20).map((bookSingle) => {
+                const newBooks = docs.slice(0,100).map((bookSingle) => {
                     const {key, author_name, cover_i, ratings_average, first_publish_year, title} = bookSingle
 
                     return {
